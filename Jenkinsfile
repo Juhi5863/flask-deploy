@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'rohith1305/flask-app:latest'
+        DOCKER_IMAGE = 'juhichoudhary/flask-app:latest'
 
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/KyathamRohith/flask-deploy', branch: 'main'
+                git url: 'https://github.com/Juhi5863/flask-deploy.git', branch: 'main'
             }
         }
 
